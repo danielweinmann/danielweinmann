@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby "2.3.0"
 gem 'rails', '~> 5.0.0'
-gem 'puma', '~> 3.0'
 
 gem 'foundation-rails'
 gem 'slim'
@@ -18,6 +17,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'puma'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
