@@ -60,8 +60,22 @@ html lang="pt"
         .alert-box.text-center class="#{key}" data-alert="true"
           = msg
           a href="#" class="close" &times
-    .content.row.text-center
-      h1
-        = link_to :root do
-          = 'Daniel Weinmann'
+    div style="background-color: yellow; padding: 1rem; margin-bottom: 1rem;"
+      .row
+        div.text-left
+          span.text-left data-responsive-toggle="responsive-menu" data-hide-for="medium"
+            button.menu-icon.dark type="button" data-toggle="true"
+          #responsive-menu
+            ul.menu.vertical.medium-horizontal style="width: 528px; margin: 0 auto;"
+              li
+                a href="#" Sobre mim
+              li
+                a href="#" Música
+              li
+                a href="#" Tango
+              li
+                a href="#" Poesia
+              li
+                a href="#" Empreendedorismo
+    .row.text-center
       = yield
