@@ -60,22 +60,21 @@ html lang="pt"
         .alert-box.text-center class="#{key}" data-alert="true"
           = msg
           a href="#" class="close" &times
-    div style="background-color: yellow; padding: 1rem; margin-bottom: 1rem;"
+    div.bg style="padding: 1rem;"
       .row
         div.text-left
           span.text-left data-responsive-toggle="responsive-menu" data-hide-for="medium"
-            button.menu-icon.dark type="button" data-toggle="true"
+            button.menu-icon type="button" data-toggle="true"
           #responsive-menu
-            ul.menu.vertical.medium-horizontal style="width: 528px; margin: 0 auto;"
+            ul.menu.vertical.medium-horizontal style="width: 710px; margin: 0 auto;"
               li
-                a href="#" Sobre mim
+                a.menu-item href="#" Sobre mim
               li
-                a href="#" Música
+                a.menu-item href="#" Música
               li
-                a href="#" Tango
+                a.menu-item href="#" Tango
               li
-                a href="#" Poesia
+                a.menu-item href="#" Poesia
               li
-                a href="#" Empreendedorismo
-    .row.text-center
-      = yield
+                a.menu-item href="#" Empreendedorismo
+    = yield
