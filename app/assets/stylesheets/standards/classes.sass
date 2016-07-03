@@ -5,6 +5,9 @@
 .lead
   @include breakpoint(small only)
     font-size: $global-font-size * 1.10
+.thumbnail img
+  @include breakpoint(small only)
+    width: 60px
 .bg-pattern
   background: image-url('bg.png')
 .bg-dark
@@ -30,9 +33,9 @@
   border-radius: 50%
   padding-top: 2px
   @include breakpoint(small only)
-    height: 30px
-    width: 30px
-    padding-top: 0px
+    height: 36px
+    width: 36px
+    padding-top: 1px
 .no-margin
   margin: 0
 .margin-bottom
