@@ -2,6 +2,9 @@
   width: 92%
   @include breakpoint(medium up)
     width: 800px
+.lead
+  @include breakpoint(small only)
+    font-size: $global-font-size * 1.10
 .bg-pattern
   background: image-url('bg.png')
 .bg-dark
@@ -29,7 +32,7 @@
   @include breakpoint(small only)
     height: 30px
     width: 30px
-    padding-top: 1px
+    padding-top: 0px
 .no-margin
   margin: 0
 .margin-bottom
