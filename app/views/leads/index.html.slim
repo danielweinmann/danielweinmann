@@ -1,10 +1,12 @@
+- content_for :title do
+  = "Arte, ensino, visão do todo e coragem pra fazer o que tem que ser feito"
 .row.text-center
   h1.no-margin
     = image_tag 'index.png'
-div style="background: #312827"
+div.bg-dark
   .content.row.text-center.padding-vertical
-    h2 style="color: #FF9500" Buenas, eu sou o Daniel Weinmann
-    p.lead.margin-bottom style="color: #FFFFFF" Pode ser que tu me conheça de um destes
+    h2.orange Buenas, eu sou o Daniel Weinmann
+    p.lead.margin-bottom.white Pode ser que tu me conheça de um destes
     a.thumbnail.margin-horizontal-small target='_blank' href='https://www.facebook.com/ganastangoclube'
       = image_tag 'ganas.png'
     a.thumbnail.margin-horizontal-small target='_blank' href='https://www.catarse.me/'
@@ -29,13 +31,29 @@ div style="background: #312827"
       = image_tag 'cccev.jpg'
     a.thumbnail.margin-horizontal-small target='_blank' href='http://www.centroruthcardoso.org.br/iniciativas/festival-de-ideias/'
       = image_tag 'festivaldeideias.png'
-div style="background: #1D9799; color: #ffffff"
+div.bg-green.white
   .content.row.text-justify.padding-vertical
     h3.text-center.margin-bottom Há quem pense que eu sou bailarino e professor de tango, programador, músico, empreendedor, DJ de tango, consultor ou poeta
     p.lead De muitas formas tá todo mundo certo. Eu já fiz tudo isso, criei vários negócios e outras coisas muito bonitas. Mas eu não sou nada disso. E não quero dizer no sentido mais amplo, que é de que isso não define o meu ser. Tem algo muito mais concreto faltando. Sinto que nenhuma destas coisas definem minha profissão, ou seja, o meu trabalho e minha contribuição para o mundo.
-    p.lead Não encontrei um nome de profissão, mas vivendo e refletindo profundamente cheguei a 4 características que definem o que faço:
-    ol.lead
-      li <strong>Eu sou um artista.</strong> Mesmo quando trabalho em áreas que não são normalmente consideradas artísticas, eu aporto arte. O jeito de fazer as coisas de um artista. A disciplina de trazer pra fora — e embelezar — o que vem de dentro.
-      li <strong>Eu sou um professor.</strong> Aprender e ensinar são provavelmente as coisas que mais me dão brilho aos olhos. E a superfície não me satisfaz: preciso ir a fundo no que estudo, e ensinar tudo sem guardar nada só pra mim.
-      li <strong>Eu sou um arquiteto do ecossistema.</strong> Eu tô sempre atento ao que se passa com o todo. Mesmo quando trabalho nas profundezas da arte mais individual, na hora de trazer essa arte pro mundo, faço isso com todo o ecossistema em mente.
-      li <strong>Eu tenho a coragem pra fazer o que tem que ser feito.</strong> Coragem — agir com o coração — me vem fácil. A partir do momento que sinto com clareza o que tem que ser feito, pronto: é só fazer :)
+    p.lead Não tenho um título, mas vivendo e refletindo cheguei a 4 traços que falam bem do que faço:
+    ol.no-bullet
+      li
+        h4.bold.padding-vertical-small
+          .number 1
+          | Eu sou um artista
+        p.lead Mesmo quando trabalho em áreas que não são normalmente consideradas artísticas, eu aporto arte. O jeito de fazer as coisas de um artista. A disciplina de trazer pra fora — e embelezar — o que vem de dentro.
+      li
+        h4.bold.padding-vertical-small
+          span.number 2
+          | Eu sou um professor
+        p.lead Aprender e ensinar são provavelmente as coisas que mais me dão brilho aos olhos. E a superfície não me satisfaz: preciso ir a fundo no que estudo, e ensinar tudo sem guardar nada só pra mim.
+      li
+        h4.bold.padding-vertical-small
+          span.number 3
+          | Eu sou um arquiteto do ecossistema
+        p.lead Eu tô sempre atento ao que se passa com o todo. Mesmo quando trabalho nas profundezas da arte mais individual, na hora de trazer essa arte pro mundo, faço isso com todo o ecossistema em mente.
+      li
+        h4.bold.padding-vertical-small
+          span.number 4
+          | Eu tenho a coragem pra fazer o que tem que ser feito
+        p.lead Coragem — agir com o coração — me vem fácil. A partir do momento que sinto com clareza o que tem que ser feito, pronto: é só fazer :)

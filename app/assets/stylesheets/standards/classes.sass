@@ -1,7 +1,35 @@
-@import colors
-
 .content
   width: 92%
+  @include breakpoint(medium up)
+    width: 800px
+.bg-pattern
+  background: image-url('bg.png')
+.bg-dark
+  background: $dark
+.bg-green
+  background: $green
+.white
+  color: $white
+.orange
+  color: $orange
+.yellow
+  color: $yellow
+.bold
+  font-weight: 700
+.number
+  background: $white
+  color: $green
+  margin-right: 1rem
+  height: 40px
+  width: 40px
+  display: inline-block
+  text-align: center
+  border-radius: 50%
+  padding-top: 2px
+  @include breakpoint(small only)
+    height: 30px
+    width: 30px
+    padding-top: 1px
 .no-margin
   margin: 0
 .margin-bottom
@@ -12,8 +40,9 @@
 .padding-vertical
   padding-top: 2rem
   padding-bottom: 2rem
-.bg
-  background: image-url('bg.png')
+.padding-vertical-small
+  padding-top: 1rem
+  padding-bottom: 1rem
 .menu-item
   font-family: 'Raleway', sans-serif
   font-weight: 700
